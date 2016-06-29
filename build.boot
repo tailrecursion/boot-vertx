@@ -29,6 +29,9 @@
 (deftask develop []
   (comp (watch) (speak) (test)))
 
+(deftask demo []
+  (comp (web) (watch) (speak) (serve)))
+
 (task-options!
   pom  {:project     'tailrecursion/boot-vertx
         :version     +version+
