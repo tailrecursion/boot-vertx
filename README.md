@@ -1,5 +1,5 @@
 # boot-vertx [![Build Status][1]][2]
-a development webserver for boot (wip)
+a development webserver for boot (WIP)
 
 [](dependency)
 ```clojure
@@ -8,7 +8,7 @@ a development webserver for boot (wip)
 [](/dependency)
 
 ## overview
-THIS TASK IS A WORK IN PROGRESS AND NOT YET RECOMMENDED FOR ANY KIND OF USE. it is designed to speed up the server-side development workflow by utilizing boot's pods to maintain a clean, interactive environment without the need for annoying jvm restarts or libraries that compromise lisp's ability to clearly express the logic of the problem your application is solving.  it serves an internal distribution from the fileset's output directories (resources and assets).  the distribution mirrors the contents of the environment's target directory, but is served from vertx's classpath as an exploded war file.  
+THIS TASK IS A WORK IN PROGRESS AND NOT YET RECOMMENDED FOR USE. it is designed to speed up the server-side development workflow by utilizing boot's pods to maintain a clean, interactive environment without the need for annoying jvm restarts or libraries that compromise lisp's ability to clearly express the logic of the problem your application is solving.  it serves an internal distribution from the fileset's output directories (resources and assets).  the distribution mirrors the contents of the environment's target directory, but is served from vertx's classpath as an exploded war file.  
 
 ## rationale
 at present, this task is a rather naive implementation that fails to make use of vertx's many features and idioms; more of these capabilities will be exposed over time.
